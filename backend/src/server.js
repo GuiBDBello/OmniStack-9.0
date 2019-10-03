@@ -1,43 +1,25 @@
 // Importa uma dependência externa
 const express = require('express');
+const mongoose = require('mongoose');
+/*
+ * Importa o arquivo que gerencia as rotas. É necessário utilizar o caminho 
+ * relativo (./), se não a aplicação busca por uma dependência externa
+ */
+const routes = require('./routes');
 
 // "Cria" a aplicação
 const app = express();
 
+// Conecta no MongoDB
+mongoose.connect('mongodb+srv://omnistack:omnistack@omnistack-qkjut.mongodb.net/semana09?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+});
+
 // Define que o express deve utilizar o formato JSON
 app.use(express.json());
 
-/*
- * Define uma rota e uma função com requisição (informações que o usuário está enviando)
- * e resposta (dados retornados pelo servidor ao cliente) de uma requisição GET
- */
-app.get('/', (req, res) => {
-    // Retorna um texto na resposta
-    //return res.send('Hello World!');
-
-    // Retorna uma estrutura de dados no formato JSON
-    return res.json({ message: "Hello World!" });
-});
-
-// Como o navegador faz apenas requisições GET, utilizaremos o Insomnia para testar requisições POST
-app.post('/users', (req, res) => {
-    return res.json({ message: "Hello OmniStack" });
-});
-
-// Query Params (para filtros) são acessados pela variável `req.query`
-app.get('/users', (req, res) => {
-    return res.json({ idade: req.query.idade });
-});
-
-// Route Params (para edição, deleção) vão dentro da URL e são acessados pela variável `req.params`
-app.put('/users/:id', (req, res) => {
-    return res.json({ id: req.params.id });
-});
-
-// Body (para criação) é acessado pela variável `req.body`
-app.post('/users', (req, res) => {
-    return res.json(req.body);
-});
+app.use(routes);
 
 // Roda a aplicação na porta definida
 app.listen(3333);
