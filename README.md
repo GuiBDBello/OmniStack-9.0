@@ -8,10 +8,12 @@ Sistema desenvolvido para a Semana OmniStack 9.0
 - `yarn add nodemon -D` ou `npm install nodemon -D`: adiciona a dependência `nodemon` apenas para a versão de desenvolvimento do projeto (`-D`).
 - `yarn add mongoose` ou `npm install mongoose`: biblioteca que facilita trabalhar com os dados no MongoDB.
 - `yarn add multer` ou `npm install multer`: lida com formatos Multipart Form Data (upload de arquivos, etc).
+- `yarn create react-app frontend` ou `npx create-react-app frontend`: cria um novo projeto React em um diretório chamado `frontend`.
+- `yarn start` ou `npm start`: executado no diretório `frontend` (onde o projeto ReactJS foi criado) para executá-lo.
 
 ## Atalhos
 - `Ctrl` + `'`: abre o terminal do VSCode.
-- `Ctrl` + `D`: edita palavras iguais que estão na mesma linha.
+- `Ctrl` + `D`: edita palavras iguais.
 
 ## Outros
 
