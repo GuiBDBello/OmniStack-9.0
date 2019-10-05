@@ -12,6 +12,7 @@ Sistema desenvolvido para a Semana OmniStack 9.0
 - `yarn start` ou `npm start`: executado no diretório `frontend` (onde o projeto ReactJS foi criado) para executá-lo.
 - `yarn add axios` ou `npm install axios`: biblioteca que permite realizar chamadas à API.
 - `yarn add cors` ou `npm install cors`: biblioteca que gerencia os endereços que podem consumir a API.
+- `yarn add react-router-dom` ou `npm install react-router-dom`: biblioteca de rotas mais famosa no ReactJS.
 
 ## Atalhos
 - `Ctrl` + `'`: abre o terminal do VSCode.
