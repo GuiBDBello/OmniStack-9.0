@@ -23,7 +23,7 @@ app.use(cors());
 // Define que o express deve utilizar o formato JSON
 app.use(express.json());
 // Forma utilizada pelo express para retornar arquivos estáticos (pdf, imagem)
-app.use('/files', express.static(path.resolve(__dirname, '..', 'upload')));
+app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads')));
 
 app.use(routes);
 
