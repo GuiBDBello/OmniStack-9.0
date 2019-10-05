@@ -11,6 +11,7 @@ Sistema desenvolvido para a Semana OmniStack 9.0
 - `yarn create react-app frontend` ou `npx create-react-app frontend`: cria um novo projeto React em um diretório chamado `frontend`.
 - `yarn start` ou `npm start`: executado no diretório `frontend` (onde o projeto ReactJS foi criado) para executá-lo.
 - `yarn add axios` ou `npm install axios`: biblioteca que permite realizar chamadas à API.
+- `yarn add cors` ou `npm install cors`: biblioteca que gerencia os endereços que podem consumir a API.
 
 ## Atalhos
 - `Ctrl` + `'`: abre o terminal do VSCode.

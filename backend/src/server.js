@@ -1,6 +1,7 @@
 // Importa uma dependência externa
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 /*
  * Importa o arquivo que gerencia as rotas. É necessário utilizar o caminho 
  * relativo (./), se não a aplicação busca por uma dependência externa
@@ -16,6 +17,8 @@ mongoose.connect('mongodb+srv://omnistack:omnistack@omnistack-qkjut.mongodb.net/
     useUnifiedTopology: true,
 });
 
+// Permite que qualquer tipo de aplicação acesse a API
+app.use(cors());
 // Define que o express deve utilizar o formato JSON
 app.use(express.json());
 
