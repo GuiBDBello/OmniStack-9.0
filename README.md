@@ -13,6 +13,11 @@ Sistema desenvolvido para a Semana OmniStack 9.0
 - `yarn add axios` ou `npm install axios`: biblioteca que permite realizar chamadas à API.
 - `yarn add cors` ou `npm install cors`: biblioteca que gerencia os endereços que podem consumir a API.
 - `yarn add react-router-dom` ou `npm install react-router-dom`: biblioteca de rotas mais famosa no ReactJS.
+- `npm install -g expo-cli`: instala o expo, que facilita na construção da aplicação (porém, não possui todas as funcionalidades nativas do Android/iOS).
+- `expo init mobile`: cria um projeto React Native com o nome 'mobile' utilizando a biblioteca Expo.
+- `yarn start` ou `npm start` ou `expo start`: executado no diretório `mobile` (onde o projeto React Native foi criado) para executá-lo.
+- `yarn add react-navigation` ou `npm install react-navigation`: biblioteca mais utilizada para gerenciar as rotas no React Native.
+- `expo install react-native-gesture-handler react-native-reanimated`: bibliotecas para lidar com gestos e animações dentro do Expo.
 
 ## Atalhos
 - `Ctrl` + `'`: abre o terminal do VSCode.
