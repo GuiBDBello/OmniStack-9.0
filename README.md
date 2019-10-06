@@ -10,7 +10,7 @@ Sistema desenvolvido para a Semana OmniStack 9.0
 - `yarn add multer` ou `npm install multer`: lida com formatos Multipart Form Data (upload de arquivos, etc).
 - `yarn create react-app frontend` ou `npx create-react-app frontend`: cria um novo projeto React em um diretório chamado `frontend`.
 - `yarn start` ou `npm start`: executado no diretório `frontend` (onde o projeto ReactJS foi criado) para executá-lo.
-- `yarn add axios` ou `npm install axios`: biblioteca que permite realizar chamadas à API.
+- `yarn add axios` ou `npm install axios`: biblioteca que permite realizar chamadas à API (utilizado nos projetos `frontend` e `mobile`).
 - `yarn add cors` ou `npm install cors`: biblioteca que gerencia os endereços que podem consumir a API.
 - `yarn add react-router-dom` ou `npm install react-router-dom`: biblioteca de rotas mais famosa no ReactJS.
 - `npm install -g expo-cli`: instala o expo, que facilita na construção da aplicação (porém, não possui todas as funcionalidades nativas do Android/iOS).
