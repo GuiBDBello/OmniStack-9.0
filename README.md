@@ -1,5 +1,5 @@
 # Semana OmniStack 9.0
-Sistema desenvolvido para a Semana OmniStack 9.0
+Sistema desenvolvido para a Semana OmniStack 9.0.
 
 ## Comandos
 - `yarn init -y` ou `npm init -y`: cria o arquivo `package.json` com as configurações do projeto. Esse arquivo mantém as dependências instaladas no projeto.
@@ -18,6 +18,8 @@ Sistema desenvolvido para a Semana OmniStack 9.0
 - `yarn start` ou `npm start` ou `expo start`: executado no diretório `mobile` (onde o projeto React Native foi criado) para executá-lo.
 - `yarn add react-navigation` ou `npm install react-navigation`: biblioteca mais utilizada para gerenciar as rotas no React Native.
 - `expo install react-native-gesture-handler react-native-reanimated`: bibliotecas para lidar com gestos e animações dentro do Expo.
+- `yarn add socket.io`: abstrai funcionalidades do protocolo WebSockets implantado pelo node para realizar chamadas em tempo real.
+- `yarn add socket.io-client`: instala as dependências que vão consumir o backend das WebSockets (deve ser instalado no `frontend` e no `mobile`).
 
 ## Atalhos
 - `Ctrl` + `'`: abre o terminal do VSCode.
